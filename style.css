@@ -213,3 +213,33 @@ body {
     transform: translateX(-50%);
 }
 
+@media (max-width: 760px){
+    .weather-app{
+        width: 85%;
+    }
+    .search-box {
+    width: 90%;
+}
+
+.main-weather #cityName{
+    font-size: 28px;
+    margin-top: 2rem;
+}
+
+#temp{
+    font-size: 22px;
+}
+
+#condition{
+    font-size: 22px;
+}
+
+.info-card h3{
+    font-size: 18px;
+}
+
+.info-card p{
+    font-size: 18px;
+}
+
+}
