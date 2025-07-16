@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="left-card" id="leftCard">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Search Location">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="main-weather">
+                <h2 id="cityName">City Name</h2>
+                <p id="temp">0°C</p>
+                <p id="condition">Condition</p>
+                <img id="weatherIcon" src="" alt="Weather Icon" />
+            </div>
+        </div>
+        <div id="forecast-container">
+            <h2>Weekly Forecast</h2>
+            <div id="forecast"></div>
+        </div>
+        <div class="right-panel" id="rightPanel">
+            <div class="info-card" id="wind">
+                <h3>Wind:</h3>
+                <p id="wind-value">--</p>
+            </div>
+            <div class="info-card" id="humidity">
+                <h3>Humidity:</h3>
+                <p id="humidity-value">--</p>
+            </div>
+            <div class="info-card" id="aqiBar">
+                <h3 id="aqiTitle">Air Quality</h3>
+                <div id="aqiValue">--</div>
+                <div class="aqi-bar-container">
+                    <div class="aqi-bar">
+                        <div class="aqi-indicator" id="aqiIndicator"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card" id="feelsLike">
+                <h3>Feels like:</h3>
+                <p id="feelsLike-value">--</p>
+            </div>
+            <div class="info-card" id="windDir">
+                <h3>Wind Direction:</h3>
+                <p id="windDir-value">--</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
