@@ -1,6 +1,6 @@
 body {
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
     box-sizing: border-box;
@@ -53,12 +53,12 @@ body {
 
 .search-box input::placeholder {
     color: white;
-    opacity: 0.7; 
+    opacity: 0.7;
 }
 
 .search-box input:focus {
     outline: none;
-    border: 2px rgba(69, 69, 69, 0.3) solid; 
+    border: 2px rgba(69, 69, 69, 0.3) solid;
 }
 
 
@@ -78,19 +78,19 @@ body {
     margin: 0.5rem 0;
 }
 
-.main-weather #cityName{
+.main-weather #cityName {
     font-size: 36px;
     margin-top: 2.5rem;
     margin-bottom: 0;
 }
 
-#temp{
+#temp {
     font-size: 28px;
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
 
-#condition{
+#condition {
     font-size: 24px;
     margin-top: 0.2rem;
 }
@@ -113,14 +113,14 @@ body {
     margin: 0.8rem;
     color: white;
     font-size: 20px;
-   
+
 }
 
 #forecast {
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
-    overflow-x: auto; 
+    overflow-x: auto;
     padding-bottom: 0.5rem;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -136,7 +136,7 @@ body {
     border-radius: 8px;
     text-align: center;
     min-width: 60px;
-    flex: 0 0 auto; 
+    flex: 0 0 auto;
     scroll-snap-align: start;
 }
 
@@ -163,12 +163,12 @@ body {
     line-height: 1rem;
 }
 
-.info-card h3{
+.info-card h3 {
     margin: 0;
 }
 
 #aqiBar {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
 }
 
 #aqiBar {
@@ -191,15 +191,13 @@ body {
     width: 100%;
     height: 8px;
     border-radius: 5px;
-    background: linear-gradient(
-        to right,
-        green 0%,
-        yellow 20%,
-        orange 40%,
-        red 60%,
-        purple 80%,
-        maroon 100%
-    );
+    background: linear-gradient(to right,
+            green 0%,
+            yellow 20%,
+            orange 40%,
+            red 60%,
+            purple 80%,
+            maroon 100%);
     position: relative;
 }
 
@@ -213,33 +211,34 @@ body {
     transform: translateX(-50%);
 }
 
-@media (max-width: 760px){
-    .weather-app{
+@media (max-width: 760px) {
+    .weather-app {
         width: 85%;
     }
+
     .search-box {
-    width: 90%;
-}
+        width: 90%;
+    }
 
-.main-weather #cityName{
-    font-size: 28px;
-    margin-top: 2rem;
-}
+    .main-weather #cityName {
+        font-size: 28px;
+        margin-top: 2rem;
+    }
 
-#temp{
-    font-size: 22px;
-}
+    #temp {
+        font-size: 22px;
+    }
 
-#condition{
-    font-size: 22px;
-}
+    #condition {
+        font-size: 22px;
+    }
 
-.info-card h3{
-    font-size: 18px;
-}
+    .info-card h3 {
+        font-size: 18px;
+    }
 
-.info-card p{
-    font-size: 18px;
-}
+    .info-card p {
+        font-size: 18px;
+    }
 
 }
